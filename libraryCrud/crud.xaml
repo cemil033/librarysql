@@ -1,0 +1,69 @@
+﻿<Window x:Class="libraryCrud.crud"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:libraryCrud"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="crud" Height="800" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,115,0" BorderThickness="6" BorderBrush="Black" >Book Id</Label>
+            <TextBox Name="tb_bid" Width="320" FontSize="26" FontWeight="Bold" TextChanged="tb_bid_TextChanged"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,69,0" BorderThickness="6" BorderBrush="Black" >Book Name</Label>
+            <TextBox Name="tb_bname" Width="320" FontSize="26" FontWeight="Bold" ></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,70,0" BorderThickness="6" BorderBrush="Black" >Book Pages</Label>
+            <TextBox Name="tb_bpage" Width="320" FontSize="26" FontWeight="Bold" ></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,90,0" BorderThickness="6" BorderBrush="Black" >Year Press</Label>
+            <TextBox Name="tb_yrprs" Width="320" FontSize="26" FontWeight="Bold" ></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,129,0" BorderThickness="6" BorderBrush="Black" >Theme</Label>
+            <ComboBox Name="cb_thm" Width="320" FontSize="26" FontWeight="Bold"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,100,0" BorderThickness="6" BorderBrush="Black" >Category</Label>
+            <ComboBox Name="cb_ctgry" Width="320" FontSize="26" FontWeight="Bold"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,127,0" BorderThickness="6" BorderBrush="Black" >Author</Label>
+            <ComboBox Name="cb_author" Width="320" FontSize="26" FontWeight="Bold"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,150,0" BorderThickness="6" BorderBrush="Black" >Press</Label>
+            <ComboBox Name="cb_prss" Width="320" FontSize="26" FontWeight="Bold"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,95,0" BorderThickness="6" BorderBrush="Black" >Comment</Label>
+            <TextBox Name="tb_bcomm" Width="320" FontSize="26" FontWeight="Bold" ></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="26" FontWeight="Bold" Margin="0,0,37,0" BorderThickness="6" BorderBrush="Black" >Book Quantity</Label>
+            <TextBox Name="tb_bqnty" Width="320" FontSize="26" FontWeight="Bold" ></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="10" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="btn_ok" FontSize="26" FontWeight="Bold" Margin="0,0,60,0" Width="150" Click="btn_ok_Click">OK</Button>
+            <Button Name="btn_cnl" FontSize="26" FontWeight="Bold" Width="150" Click="btn_cnl_Click">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</Window>

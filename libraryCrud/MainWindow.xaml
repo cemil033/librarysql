@@ -1,0 +1,39 @@
+﻿<Window x:Class="libraryCrud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:libraryCrud"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="16" FontWeight="Bold" Margin="0,0,20,0" >Author</Label>
+            <ComboBox Name="cb_auth" Width="180" Margin="0,0,120,0" SelectionChanged="cb_SelectionChanged"></ComboBox>
+            <Label FontSize="16" FontWeight="Bold" Margin="0,0,20,0">Category</Label>
+            <ComboBox Name="cb_catg" Width="180" SelectionChanged="cb_SelectionChanged"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button FontSize="16" Width="180" FontWeight="Bold" Margin="0,0,60,0" Click="Button_Click">Add</Button>
+            <Button FontSize="16" Width="180" FontWeight="Bold" Margin="0,0,60,0" Click="Button_Click_1">Update</Button>
+            <Button FontSize="16" Width="180" FontWeight="Bold" Margin="0,0,0,0" Click="Button_Click_2">Delete</Button>            
+        </StackPanel>
+        <DataGrid Name="dg_books" Grid.Row="2">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Turquoise"></Setter>
+                    <Setter Property="FontWeight" Value="SemiBold"></Setter>
+                    <Setter Property="BorderBrush" Value="Black"></Setter>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"></Setter>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        </Grid>
+</Window>

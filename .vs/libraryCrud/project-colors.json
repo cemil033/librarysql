@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "49338fbf-948b-4a48-b850-eadc9dedfa94": {
+      "ProjectGuid": "49338fbf-948b-4a48-b850-eadc9dedfa94",
+      "DisplayName": "libraryCrud",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
